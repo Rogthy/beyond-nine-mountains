@@ -1,0 +1,39 @@
+:root {
+  --pozadi: #15161b;
+  --plocha: #1d1f26;
+  --text: #e4e0d6;
+  --text-2: #a9a59b;
+  --zlata: #d2b46a;
+  --linka: #2e313b;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --pozadi: #f6f3ec;
+    --plocha: #fffdf8;
+    --text: #1f1d19;
+    --text-2: #5d594f;
+    --zlata: #8a6a1f;
+    --linka: #e2dccd;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--pozadi);
+  color: var(--text);
+  font: 17px/1.65 Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+}
+main { max-width: 680px; margin: 0 auto; padding: 56px 16px 72px; }
+header { border-bottom: 1px solid var(--linka); margin-bottom: 32px; padding-bottom: 20px; }
+.znacka { color: var(--zlata); font-size: 13px; letter-spacing: .18em; text-transform: uppercase; margin: 0 0 8px; }
+h1 { font-size: 34px; line-height: 1.2; margin: 0; font-weight: normal; }
+h2 { font-size: 21px; margin: 36px 0 10px; font-weight: normal; color: var(--zlata); }
+p, li { color: var(--text); }
+.pozn { color: var(--text-2); font-size: 15px; }
+a { color: var(--zlata); }
+ul { padding-left: 22px; }
+li { margin: 6px 0; }
+nav { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--linka); font-size: 15px; }
+nav a { margin-right: 18px; }
+code { font-size: 14px; background: var(--plocha); padding: 1px 5px; border-radius: 4px; overflow-wrap: anywhere; }
